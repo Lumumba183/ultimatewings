@@ -20,7 +20,7 @@ export default function ArticleMenstrualHealth() {
       {/* Hero */}
       <section className="relative min-h-[50vh] bg-deep-earth flex items-end overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(28,51,40,0.3), rgba(28,51,40,0.95))' }} />
-        <img src="/images/blog-menstrual.jpg" alt="Girls education" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/images/supplies-distribution.jpg" alt="Girls receiving sanitary supplies" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 w-full content-max-width mx-auto px-6 lg:px-12 pb-16 pt-32">
           <div className="article-animate">
             <span className="inline-block bg-golden-hour/20 text-amber-light text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Healthcare & Education</span>
@@ -60,7 +60,7 @@ export default function ArticleMenstrualHealth() {
               At Ultimate Wings Kenya, we refuse to accept a world where a natural biological process becomes a reason for a girl to drop out of school. Our <strong>sanitary towel distribution program</strong> is not a handout — it is a <strong>rights-based intervention</strong>.
             </p>
             <p className="text-off-black/80 leading-relaxed mb-6">
-              Through our partnership with <strong>KDEF</strong> (Kenya Development Empowerment Forum), we:
+              Through our dedicated menstrual health program, we:
             </p>
             <ul className="list-disc list-inside space-y-2 text-off-black/80 mb-6 ml-4">
               <li>Distribute free, high-quality sanitary towels to girls in partner schools across Malindi and Nairobi</li>

@@ -109,7 +109,7 @@ export default function ArticleYearInReview2025() {
               This year marked our expansion into two new communities in Nairobi's informal settlements. What started as a small pilot program in Kibera has grown into a thriving network of 25 sponsored children, 15 widows in table banking groups, and a community health partnership that brings monthly mobile clinics to over 300 residents.
             </p>
             <p className="text-off-black/80 leading-relaxed mb-6">
-              We also deepened our commitment to menstrual health, partnering with Kenya Developmental Empowerment Foundation (KDEF) to distribute sanitary supplies and conduct dignity workshops in 8 schools. The result? A 40% reduction in girls missing school during their periods — a statistic that translates directly into brighter futures.
+              We also deepened our commitment to menstrual health, distributing sanitary supplies and conducting dignity workshops in 8 schools. The result? A 40% reduction in girls missing school during their periods — a statistic that translates directly into brighter futures.
             </p>
 
             <h2 className="font-display font-bold text-2xl text-deep-forest mt-10 mb-4">Looking Ahead: Our Vision for 2026</h2>

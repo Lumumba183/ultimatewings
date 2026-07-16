@@ -13,9 +13,9 @@ const articles = [
     id: 1,
     tag: 'Healthcare',
     title: 'Pads Are Not Charity – Menstrual Dignity Is a Right',
-    excerpt: 'Why girls in Kenya miss school — not because of menstruation itself, but because of failed systems. Discover how Ultimate Wings and KDEF are changing the narrative.',
+    excerpt: 'Why girls in Kenya miss school — not because of menstruation itself, but because of failed systems. Discover how Ultimate Wings is changing the narrative.',
     meta: 'March 15, 2026 • 8 min read',
-    image: '/images/blog-menstrual.jpg',
+    image: '/images/supplies-distribution.jpg',
     slug: '/blog/pads-are-not-charity',
   },
   {
@@ -24,7 +24,7 @@ const articles = [
     title: '63 Children and Counting – How Ultimate Wings Keeps Dreams Alive',
     excerpt: 'Meet the 63+ children in school through our sponsorship program. From special meals to university graduation — every dream matters.',
     meta: 'February 28, 2026 • 7 min read',
-    image: '/images/blog-children.jpg',
+    image: '/images/students-assembly.jpg',
     slug: '/blog/63-children-and-counting',
   },
   {
@@ -33,7 +33,7 @@ const articles = [
     title: 'From Hardship to Harvest – How Ultimate Wings Empowers Over 100 Widows',
     excerpt: 'Through agriculture, table banking, and beekeeping — our widows are building sustainable livelihoods and reclaiming their dignity.',
     meta: 'February 10, 2026 • 8 min read',
-    image: '/images/blog-widows.jpg',
+    image: '/images/widow-home.jpg',
     slug: '/blog/from-hardship-to-harvest',
   },
   {
@@ -60,7 +60,7 @@ const articles = [
     title: 'Education Doesn\'t Just Change a Girl\'s Life – It Changes Everything',
     excerpt: 'Ultimate Wings Kenya Day 2026: Recommitting to a future where every girl can learn and choose what\'s next for her.',
     meta: 'March 8, 2026 • 6 min read',
-    image: '/images/blog-girls-day.jpg',
+    image: '/images/books-distribution.jpg',
     slug: '/blog/girls-education-day-2026',
   },
   {
@@ -69,7 +69,7 @@ const articles = [
     title: 'Together We Rise – The Power of Community in Healing',
     excerpt: 'A softer, emotional reflection on how friendship and community support strengthen our mission and our hearts.',
     meta: 'December 25, 2025 • 5 min read',
-    image: '/images/blog-friendship.jpg',
+    image: '/images/group-photo-van.jpg',
     slug: '/blog/together-we-rise',
   },
   {
@@ -183,7 +183,7 @@ export default function Blog() {
           <div className="bg-white rounded-2xl overflow-hidden shadow-card flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
               <img
-                src="/images/blog-menstrual.jpg"
+                src="/images/supplies-distribution.jpg"
                 alt="Pads Are Not Charity"
                 className="w-full h-full object-cover min-h-[300px] lg:min-h-[400px]"
               />
@@ -194,7 +194,7 @@ export default function Blog() {
                 Pads Are Not Charity – Menstrual Dignity Is a Right
               </h2>
               <p className="text-off-black/70 mt-4 leading-relaxed">
-                Why girls in Kenya miss school — not because of menstruation itself, but because of failed systems. Discover how Ultimate Wings and KDEF are changing the narrative through sanitary towel distribution and stigma-breaking education.
+                Why girls in Kenya miss school — not because of menstruation itself, but because of failed systems. Discover how Ultimate Wings is changing the narrative through sanitary towel distribution and stigma-breaking education.
               </p>
               <span className="text-muted-sage text-sm mt-4">March 15, 2026 &bull; 8 min read</span>
               <Link

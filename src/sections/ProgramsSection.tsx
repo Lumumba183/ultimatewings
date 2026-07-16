@@ -34,7 +34,7 @@ const programs = [
   {
     icon: Droplets,
     title: 'Menstrual Health & Dignity',
-    description: 'Partnering with KDEF to distribute sanitary towels and break the stigma around menstruation. Ensuring no girl misses school because of her period.',
+    description: 'Distributing sanitary towels and breaking the stigma around menstruation. Ensuring no girl misses school because of her period.',
   },
 ]
 

@@ -19,7 +19,7 @@ export default function ArticleChildrenEducation() {
     <div ref={sectionRef} className="min-h-screen bg-warm-cream">
       <section className="relative min-h-[50vh] bg-deep-earth flex items-end overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(28,51,40,0.3), rgba(28,51,40,0.95))' }} />
-        <img src="/images/blog-children.jpg" alt="Children in school" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/images/students-assembly.jpg" alt="Children in school" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 w-full content-max-width mx-auto px-6 lg:px-12 pb-16 pt-32">
           <div className="article-animate">
             <span className="inline-block bg-golden-hour/20 text-amber-light text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">Education</span>

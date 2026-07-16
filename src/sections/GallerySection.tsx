@@ -5,12 +5,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const images = [
-  { src: '/images/real-children-school.jpg', alt: 'Children at school in Kenya, ready to learn' },
+  { src: '/images/students-assembly.jpg', alt: 'Schoolchildren gathered for an outdoor assembly' },
   { src: '/images/real-school-deliveries.jpg', alt: 'School supplies and books delivered to children' },
-  { src: '/images/real-students-group.jpg', alt: 'Students and teachers together in a Kenyan classroom' },
-  { src: '/images/real-student-portrait.jpg', alt: 'A proud student in her school uniform' },
-  { src: '/images/gallery-2.jpg', alt: 'Kenyan women in a community support meeting' },
-  { src: '/images/gallery-3.jpg', alt: 'Teacher and students in a Kenyan classroom' },
+  { src: '/images/books-distribution.jpg', alt: 'Young women receiving educational materials' },
+  { src: '/images/goat-donation.jpg', alt: 'Community members receiving a goat for livelihood' },
+  { src: '/images/tailoring-workshop.jpg', alt: 'Widow learning tailoring skills for income' },
+  { src: '/images/children-mural.jpg', alt: 'Children posing in front of a colorful community mural' },
+  { src: '/images/house-construction.jpg', alt: 'Community building a new home together' },
+  { src: '/images/chicks-distribution.jpg', alt: 'Women receiving poultry chicks for farming' },
+  { src: '/images/supplies-distribution.jpg', alt: 'Distributing supplies to schoolgirls' },
 ]
 
 export default function GallerySection() {

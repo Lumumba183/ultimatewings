@@ -77,8 +77,22 @@ export default function ArticleWidowsMicroEnterprise() {
             <p className="text-off-black/80 leading-relaxed mb-6">
               Margaret from Malindi lost her husband to malaria in 2022. With three children to feed and no source of income, she felt her world collapse. Through our program, Margaret received beekeeping training and two starter hives. Within 18 months, she was producing 50 kilograms of honey per harvest, selling at premium prices to tourist hotels along the coast. Today, Margaret employs two other widows and has expanded to eight hives. Her children are back in school, and she is saving to buy her own plot of land.
             </p>
+            <div className="my-8 rounded-xl overflow-hidden shadow-card">
+              <img
+                src="/images/tailoring-workshop.jpg"
+                alt="Widow learning tailoring skills in Eldoret"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-sage text-center py-3 bg-warm-cream italic">
+                A widow participating in our vocational training program in Eldoret — building skills for a sustainable future.
+              </p>
+            </div>
             <p className="text-off-black/80 leading-relaxed mb-6">
-              Grace in Nairobi's Kibera slum used her micro-grant to start a chapati and mandazi business. What began as a single cooking station under a tarp is now a small restaurant with three employees. Grace's eldest daughter just started university — the first in their family to do so.
+              In Eldoret, we met Esther, a widow with four children who had been surviving on odd jobs and handouts. Through our table banking group, she accessed a micro-grant of KSh 25,000 and started a tailoring business. With training from our vocational program, Esther now makes school uniforms for local families and employs two young women from her community. Her eldest son just completed high school — a milestone she never thought possible.
+            </p>
+            <p className="text-off-black/80 leading-relaxed mb-6">
+              These stories from Malindi and Eldoret represent what happens when widows are given tools, not pity. From the coastal plains of Kilifi County to the highlands of Eldoret, women are proving that widowhood is not the end — it is a new beginning filled with purpose and dignity.
             </p>
 
             <h2 className="font-display font-bold text-2xl text-deep-forest mt-10 mb-4">The Bigger Picture</h2>
