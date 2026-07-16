@@ -142,14 +142,14 @@ export default function HeroSection() {
           preload="auto"
           onLoadedData={() => setVideoLoaded(true)}
           className="w-full h-full object-cover"
-          poster="/images/about-children.jpg"
+          poster="/images/hero-image.png"
         >
           <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Fallback image */}
         {!videoLoaded && (
           <img
-            src="/images/about-children.jpg"
+            src="/images/hero-image.png"
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
           />
