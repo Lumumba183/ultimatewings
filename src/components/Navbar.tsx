@@ -2,13 +2,21 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
+/* ---------- smooth scroll helper ---------- */
+function scrollToSection(id: string) {
+  const element = document.querySelector(id)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 const navLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'About', path: '/#about' },
-  { label: 'Programs', path: '/#programs' },
-  { label: 'Impact', path: '/#impact' },
-  { label: 'Blog', path: '/blog' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Home', path: '/', hash: null },
+  { label: 'About', path: '/', hash: '#about' },
+  { label: 'Programs', path: '/', hash: '#programs' },
+  { label: 'Impact', path: '/', hash: '#impact' },
+  { label: 'Blog', path: '/blog', hash: null },
+  { label: 'Contact', path: '/contact', hash: null },
 ]
 
 export default function Navbar() {
@@ -58,15 +66,33 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.path}
-                className={`font-body font-medium text-sm uppercase tracking-widest transition-colors duration-300 hover:text-golden-hour ${
-                  isScrolled || !isHome ? 'text-cream-white/80' : 'text-cream-white/80'
-                }`}
-              >
-                {link.label}
-              </Link>
+              link.hash ? (
+                <button
+                  key={link.label}
+                  onClick={() => {
+                    if (!isHome) {
+                      window.location.href = '/' + link.hash
+                    } else {
+                      scrollToSection(link.hash)
+                    }
+                  }}
+                  className={`font-body font-medium text-sm uppercase tracking-widest transition-colors duration-300 hover:text-golden-hour bg-transparent border-none cursor-pointer ${
+                    isScrolled || !isHome ? 'text-cream-white/80' : 'text-cream-white/80'
+                  }`}
+                >
+                  {link.label}
+                </button>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.path}
+                  className={`font-body font-medium text-sm uppercase tracking-widest transition-colors duration-300 hover:text-golden-hour ${
+                    isScrolled || !isHome ? 'text-cream-white/80' : 'text-cream-white/80'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
             <Link
               to="/contact"
@@ -106,14 +132,31 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col items-center justify-center flex-1 gap-8">
             {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.path}
-                onClick={() => setMobileOpen(false)}
-                className="font-display font-bold text-3xl text-cream-white hover:text-golden-hour transition-colors"
-              >
-                {link.label}
-              </Link>
+              link.hash ? (
+                <button
+                  key={link.label}
+                  onClick={() => {
+                    setMobileOpen(false)
+                    if (!isHome) {
+                      window.location.href = '/' + link.hash
+                    } else {
+                      setTimeout(() => scrollToSection(link.hash), 300)
+                    }
+                  }}
+                  className="font-display font-bold text-3xl text-cream-white hover:text-golden-hour transition-colors bg-transparent border-none cursor-pointer"
+                >
+                  {link.label}
+                </button>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.path}
+                  onClick={() => setMobileOpen(false)}
+                  className="font-display font-bold text-3xl text-cream-white hover:text-golden-hour transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
             <Link
               to="/contact"

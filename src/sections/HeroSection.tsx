@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import gsap from 'gsap'
 
+/* ---------- smooth scroll helper ---------- */
+function scrollToSection(id: string) {
+  const element = document.querySelector(id)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 /* ---------- particle system ---------- */
 interface Particle {
   x: number
@@ -178,9 +186,12 @@ export default function HeroSection() {
             <Link to="/contact" className="btn-primary">
               Donate Now <ArrowRight size={18} />
             </Link>
-            <Link to="/#programs" className="link-arrow text-cream-white hover:text-golden-hour underline underline-offset-4">
+            <button
+              onClick={() => scrollToSection('#programs')}
+              className="link-arrow text-cream-white hover:text-golden-hour underline underline-offset-4 bg-transparent border-none cursor-pointer"
+            >
               Our Programs <ArrowRight size={16} />
-            </Link>
+            </button>
           </div>
         </div>
       </div>

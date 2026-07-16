@@ -79,7 +79,7 @@ const articles = [
     excerpt: 'Discover how access to quality education is transforming entire communities and creating pathways out of poverty for children in Kenya.',
     meta: 'December 20, 2025 • 6 min read',
     image: '/images/blog-education.jpg',
-    slug: '/blog',
+    slug: '/blog/power-of-education',
   },
   {
     id: 9,
@@ -88,7 +88,7 @@ const articles = [
     excerpt: 'Meet the remarkable women who have built thriving businesses and reclaimed their dignity through our economic empowerment programs.',
     meta: 'November 8, 2025 • 7 min read',
     image: '/images/blog-empowerment.jpg',
-    slug: '/blog',
+    slug: '/blog/widows-micro-enterprise',
   },
   {
     id: 10,
@@ -106,7 +106,7 @@ const articles = [
     excerpt: "When Sainabu's family received their new home, it wasn't just shelter — it was the foundation for a new beginning filled with hope and security.",
     meta: 'September 22, 2025 • 6 min read',
     image: '/images/blog-community.jpg',
-    slug: '/blog',
+    slug: '/blog/sainabu-home',
   },
   {
     id: 12,
@@ -115,7 +115,7 @@ const articles = [
     excerpt: 'A look back at an incredible year of growth, impact, and transformation across the communities we serve in Kenya.',
     meta: 'January 5, 2026 • 10 min read',
     image: '/images/blog-yearreview.jpg',
-    slug: '/blog',
+    slug: '/blog/year-in-review-2025',
   },
 ]
 

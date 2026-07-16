@@ -11,6 +11,10 @@ import ArticleMobileClinics from './pages/articles/ArticleMobileClinics'
 import ArticleCommunitySTEM from './pages/articles/ArticleCommunitySTEM'
 import ArticleGirlsEducationDay from './pages/articles/ArticleGirlsEducationDay'
 import ArticleFriendshipCommunity from './pages/articles/ArticleFriendshipCommunity'
+import ArticlePowerOfEducation from './pages/articles/ArticlePowerOfEducation'
+import ArticleWidowsMicroEnterprise from './pages/articles/ArticleWidowsMicroEnterprise'
+import ArticleSainabuHome from './pages/articles/ArticleSainabuHome'
+import ArticleYearInReview2025 from './pages/articles/ArticleYearInReview2025'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -34,6 +38,10 @@ export default function App() {
           <Route path="/blog/community-stem-education" element={<ArticleCommunitySTEM />} />
           <Route path="/blog/girls-education-day-2026" element={<ArticleGirlsEducationDay />} />
           <Route path="/blog/together-we-rise" element={<ArticleFriendshipCommunity />} />
+          <Route path="/blog/power-of-education" element={<ArticlePowerOfEducation />} />
+          <Route path="/blog/widows-micro-enterprise" element={<ArticleWidowsMicroEnterprise />} />
+          <Route path="/blog/sainabu-home" element={<ArticleSainabuHome />} />
+          <Route path="/blog/year-in-review-2025" element={<ArticleYearInReview2025 />} />
         </Routes>
       </main>
       <Footer />
