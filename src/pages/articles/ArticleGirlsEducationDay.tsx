@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Calendar, Clock, Heart, Share2 } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, Heart, Share2, Lock, CheckCircle } from 'lucide-react'
 import gsap from 'gsap'
 
 export default function ArticleGirlsEducationDay() {
@@ -77,18 +77,44 @@ export default function ArticleGirlsEducationDay() {
             <p className="text-off-black/80 leading-relaxed mb-6">
               At this year's event, we heard from girls who have been with us since primary school. Girls who are now in university. Girls who are becoming doctors, teachers, and engineers. Their stories are our proof of concept. Their success is our mission fulfilled.
             </p>
+
+            {/* Real Image: Student Portrait */}
+            <div className="my-8 rounded-xl overflow-hidden shadow-card">
+              <img
+                src="/images/real-student-portrait.jpg"
+                alt="A proud student in her school uniform"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-sage text-center py-3 bg-warm-cream italic">
+                One of our scholarship students — her education is changing her family's future.
+              </p>
+            </div>
+
             <p className="text-off-black/80 leading-relaxed mb-6">
               One of our students, Faith, put it best: <em>"Ultimate Wings didn't just pay my school fees. They showed me that someone believed in me. And once I believed in myself, nothing could stop me."</em>
             </p>
 
-            <div className="bg-deep-forest rounded-2xl p-8 my-10">
+            <div className="bg-deep-forest rounded-2xl p-8 my-10 text-center">
+              <div className="w-12 h-12 rounded-full bg-golden-hour/20 flex items-center justify-center mx-auto mb-4">
+                <Heart size={24} className="text-golden-hour" />
+              </div>
               <h3 className="font-display font-bold text-xl text-cream-white mb-3">Be Part of Ultimate Wings Kenya Day 2027</h3>
-              <p className="text-cream-white/80 mb-6">
-                Mark your calendar. Ultimate Wings Kenya Day 2027 is coming, and we want you there. Whether as a donor, volunteer, or partner — your presence matters.
+              <p className="text-cream-white/80 mb-6 max-w-lg mx-auto">
+                Mark your calendar. Ultimate Wings Kenya Day 2027 is coming, and we want you there. Whether as a donor, volunteer, or partner — <strong className="text-golden-hour">your presence matters.</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill bg-golden-hour text-deep-forest font-bold uppercase tracking-widest text-sm hover:bg-[#D9A33A] transition-all">
-                Get Involved <Heart size={16} />
-              </Link>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill bg-golden-hour text-deep-forest font-bold uppercase tracking-widest text-sm hover:bg-[#D9A33A] transition-all">
+                  Get Involved <Heart size={16} />
+                </Link>
+                <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill border border-cream-white/30 text-cream-white font-medium text-sm transition-all hover:bg-cream-white/10">
+                  Sponsor a Girl
+                </Link>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-5 text-cream-white/50 text-xs">
+                <span className="flex items-center gap-1"><Lock size={12} /> Secure Payment</span>
+                <span className="flex items-center gap-1"><CheckCircle size={12} /> Registered PBO Kenya</span>
+              </div>
             </div>
 
             <p className="text-off-black/80 leading-relaxed mb-6">

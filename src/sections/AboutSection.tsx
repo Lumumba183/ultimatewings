@@ -67,8 +67,8 @@ export default function AboutSection() {
         {/* Right column */}
         <div className="space-y-6">
           <img
-            src="/images/about-children.jpg"
-            alt="Smiling African children in a classroom in Kenya"
+            src="/images/real-students-group.jpg"
+            alt="Students and teachers in a Kenyan classroom"
             className="about-image w-full rounded-lg shadow-card object-cover max-h-[70vh]"
             loading="lazy"
           />

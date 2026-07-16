@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Calendar, Clock, Heart, Share2 } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, Heart, Share2, Lock, CheckCircle } from 'lucide-react'
 import gsap from 'gsap'
 
 export default function ArticleChildrenEducation() {
@@ -45,6 +45,20 @@ export default function ArticleChildrenEducation() {
             <p className="text-off-black/80 leading-relaxed mb-6">
               Behind every one of those 63 children is a story. Some are orphans. Some come from families where a single meal a day is a luxury. Some have never owned a pair of shoes. But they all share one thing: an unshakable belief that education is their way out.
             </p>
+            
+            {/* Real Image: School Deliveries */}
+            <div className="my-8 rounded-xl overflow-hidden shadow-card">
+              <img
+                src="/images/real-school-deliveries.jpg"
+                alt="Children receiving school supplies and books"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-sage text-center py-3 bg-warm-cream italic">
+                School supplies delivery day — every book, every pen is a promise of a brighter future.
+              </p>
+            </div>
+
             <p className="text-off-black/80 leading-relaxed mb-6">
               We don't just pay school fees. We provide uniforms, books, school supplies, and — most importantly — a support system that tells each child: <em>you matter, and your future is worth investing in.</em>
             </p>
@@ -96,14 +110,27 @@ export default function ArticleChildrenEducation() {
               Child sponsorship is the heartbeat of our education program. For KSh 3,000 ($25 USD) per month, you can sponsor a child's full education — school fees, books, uniform, and nutrition support. You will receive updates, photos, and letters from your sponsored child.
             </p>
 
-            <div className="bg-deep-forest rounded-2xl p-8 my-10">
+            <div className="bg-deep-forest rounded-2xl p-8 my-10 text-center">
+              <div className="w-12 h-12 rounded-full bg-golden-hour/20 flex items-center justify-center mx-auto mb-4">
+                <Heart size={24} className="text-golden-hour" />
+              </div>
               <h3 className="font-display font-bold text-xl text-cream-white mb-3">Sponsor a Child Today</h3>
-              <p className="text-cream-white/80 mb-6">
-                Join our family of sponsors and watch a child's dream come to life. Your commitment changes everything.
+              <p className="text-cream-white/80 mb-6 max-w-lg mx-auto">
+                Join our family of sponsors and watch a child's dream come to life. For just <strong className="text-golden-hour">KSh 3,000 ($25 USD) per month</strong>, you can sponsor a child's full education — school fees, books, uniform, and nutrition support.
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill bg-golden-hour text-deep-forest font-bold uppercase tracking-widest text-sm hover:bg-[#D9A33A] transition-all">
-                Become a Sponsor <Heart size={16} />
-              </Link>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill bg-golden-hour text-deep-forest font-bold uppercase tracking-widest text-sm hover:bg-[#D9A33A] transition-all">
+                  Become a Sponsor <Heart size={16} />
+                </Link>
+                <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill border border-cream-white/30 text-cream-white font-medium text-sm transition-all hover:bg-cream-white/10">
+                  Make a One-Time Donation
+                </Link>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-5 text-cream-white/50 text-xs">
+                <span className="flex items-center gap-1"><Lock size={12} /> Secure Payment</span>
+                <span className="flex items-center gap-1"><CheckCircle size={12} /> Tax Deductible</span>
+                <span className="flex items-center gap-1"><Heart size={12} /> 100% to Programs</span>
+              </div>
             </div>
 
             <p className="text-off-black/80 leading-relaxed mb-6">

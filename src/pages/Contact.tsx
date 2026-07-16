@@ -223,6 +223,27 @@ export default function Contact() {
               <p className="text-cream-white/75 text-sm mt-3 leading-relaxed">
                 Your generosity directly supports children and families in Kenya. Every donation creates lasting change.
               </p>
+
+              {/* Donation Tiers */}
+              <div className="grid grid-cols-2 gap-3 mt-5">
+                <div className="bg-cream-white/10 rounded-lg p-3 text-center border border-cream-white/10 hover:bg-cream-white/15 transition-colors cursor-pointer">
+                  <span className="font-display font-bold text-lg text-golden-hour">KSh 3,000</span>
+                  <p className="text-cream-white/60 text-xs mt-1">Child sponsorship / month</p>
+                </div>
+                <div className="bg-cream-white/10 rounded-lg p-3 text-center border border-cream-white/10 hover:bg-cream-white/15 transition-colors cursor-pointer">
+                  <span className="font-display font-bold text-lg text-golden-hour">KSh 5,000</span>
+                  <p className="text-cream-white/60 text-xs mt-1">Sanitary supplies</p>
+                </div>
+                <div className="bg-cream-white/10 rounded-lg p-3 text-center border border-cream-white/10 hover:bg-cream-white/15 transition-colors cursor-pointer">
+                  <span className="font-display font-bold text-lg text-golden-hour">KSh 10,000</span>
+                  <p className="text-cream-white/60 text-xs mt-1">Widow empowerment</p>
+                </div>
+                <div className="bg-cream-white/10 rounded-lg p-3 text-center border border-cream-white/10 hover:bg-cream-white/15 transition-colors cursor-pointer">
+                  <span className="font-display font-bold text-lg text-golden-hour">Custom</span>
+                  <p className="text-cream-white/60 text-xs mt-1">Any amount helps</p>
+                </div>
+              </div>
+
               <a
                 href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID"
                 target="_blank"

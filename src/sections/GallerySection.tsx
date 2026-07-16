@@ -5,12 +5,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const images = [
-  { src: '/images/gallery-1.jpg', alt: 'Children playing together in a Kenyan village' },
+  { src: '/images/real-children-school.jpg', alt: 'Children at school in Kenya, ready to learn' },
+  { src: '/images/real-school-deliveries.jpg', alt: 'School supplies and books delivered to children' },
+  { src: '/images/real-students-group.jpg', alt: 'Students and teachers together in a Kenyan classroom' },
+  { src: '/images/real-student-portrait.jpg', alt: 'A proud student in her school uniform' },
   { src: '/images/gallery-2.jpg', alt: 'Kenyan women in a community support meeting' },
   { src: '/images/gallery-3.jpg', alt: 'Teacher and students in a Kenyan classroom' },
-  { src: '/images/blog-education.jpg', alt: 'Children studying in a classroom' },
-  { src: '/images/blog-empowerment.jpg', alt: 'Women in vocational training' },
-  { src: '/images/blog-healthcare.jpg', alt: 'Healthcare worker caring for a child' },
 ]
 
 export default function GallerySection() {

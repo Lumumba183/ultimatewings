@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Calendar, Clock, Heart, Share2 } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, Heart, Share2, Lock, CheckCircle } from 'lucide-react'
 import gsap from 'gsap'
 
 export default function ArticleYearInReview2025() {
@@ -74,6 +74,20 @@ export default function ArticleYearInReview2025() {
             <p className="text-off-black/80 leading-relaxed mb-6">
               Numbers tell part of the story, but the real impact lives in the faces of those we serve. Like David, a quiet 16-year-old from Watamu who had almost given up on school until our outreach team found him. Today, David is not just back in school — he's at the top of his class, dreaming of becoming a civil engineer to build roads in his community.
             </p>
+
+            {/* Real Image: Children at School */}
+            <div className="my-8 rounded-xl overflow-hidden shadow-card">
+              <img
+                src="/images/real-children-school.jpg"
+                alt="Children at school in Kenya"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-sage text-center py-3 bg-warm-cream italic">
+                Children at one of our partner schools — every uniform represents a dream being kept alive.
+              </p>
+            </div>
+
             <p className="text-off-black/80 leading-relaxed mb-6">
               Or Mama Grace, a widow who received her first beehive in March and harvested her first honey by October. The KSh 8,000 she earned from that harvest paid her youngest child's school fees for the entire term. "For the first time in years," she told us, "I didn't have to beg anyone for help. I did this myself."
             </p>
@@ -106,14 +120,27 @@ export default function ArticleYearInReview2025() {
               But beyond the numbers, our vision is deeper. We want to build a Kenya where no child is kept from school because of poverty. Where no widow is left destitute because of loss. Where every community has the resources and knowledge to care for its own. That is the Ultimate Wings dream — and in 2026, we intend to fly closer to it than ever before.
             </p>
 
-            <div className="bg-deep-forest rounded-2xl p-8 my-10">
+            <div className="bg-deep-forest rounded-2xl p-8 my-10 text-center">
+              <div className="w-12 h-12 rounded-full bg-golden-hour/20 flex items-center justify-center mx-auto mb-4">
+                <Heart size={24} className="text-golden-hour" />
+              </div>
               <h3 className="font-display font-bold text-xl text-cream-white mb-3">Be Part of Our 2026 Story</h3>
-              <p className="text-cream-white/80 mb-6">
-                The miracles of 2025 were made possible by people like you. As we look to 2026, we need partners, sponsors, and believers who will stand with us. Every contribution writes a new chapter in a child's life.
+              <p className="text-cream-white/80 mb-6 max-w-lg mx-auto">
+                The miracles of 2025 were made possible by people like you. As we look to 2026, we need partners, sponsors, and believers who will stand with us. <strong className="text-golden-hour">Every contribution writes a new chapter in a child's life.</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill bg-golden-hour text-deep-forest font-bold uppercase tracking-widest text-sm hover:bg-[#D9A33A] transition-all">
-                Join the Mission <Heart size={16} />
-              </Link>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill bg-golden-hour text-deep-forest font-bold uppercase tracking-widest text-sm hover:bg-[#D9A33A] transition-all">
+                  Join the Mission <Heart size={16} />
+                </Link>
+                <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-pill border border-cream-white/30 text-cream-white font-medium text-sm transition-all hover:bg-cream-white/10">
+                  Make a One-Time Donation
+                </Link>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-5 text-cream-white/50 text-xs">
+                <span className="flex items-center gap-1"><Lock size={12} /> Secure Payment</span>
+                <span className="flex items-center gap-1"><CheckCircle size={12} /> Registered PBO Kenya</span>
+                <span className="flex items-center gap-1"><Heart size={12} /> 100% to Programs</span>
+              </div>
             </div>
 
             <p className="text-off-black/80 leading-relaxed mb-6">

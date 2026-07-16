@@ -15,6 +15,7 @@ import ArticlePowerOfEducation from './pages/articles/ArticlePowerOfEducation'
 import ArticleWidowsMicroEnterprise from './pages/articles/ArticleWidowsMicroEnterprise'
 import ArticleSainabuHome from './pages/articles/ArticleSainabuHome'
 import ArticleYearInReview2025 from './pages/articles/ArticleYearInReview2025'
+import DonationFloat from './components/DonationFloat'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -45,6 +46,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <DonationFloat />
     </div>
   )
 }

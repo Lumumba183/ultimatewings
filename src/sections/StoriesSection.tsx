@@ -9,15 +9,15 @@ gsap.registerPlugin(ScrollTrigger)
 const stories = [
   {
     tag: 'Education',
-    name: "Oscar's Journey",
-    quote: "From a life-threatening accident to a smiling student — Oscar's story is a testament to the power of hope and dedicated care.",
-    image: '/images/stories-oscar.jpg',
+    name: "David's Journey",
+    quote: "From almost giving up on school to topping his class — David's story shows what happens when a child knows someone believes in them.",
+    image: '/images/real-children-school.jpg',
   },
   {
-    tag: 'Housing',
-    name: "Sainabu's Miracle",
-    quote: "This new house is a miracle for my family. My brother and daughter finally have a safe and peaceful place to call home.",
-    image: '/images/stories-sainabu.jpg',
+    tag: 'Community',
+    name: "The Power of School Supplies",
+    quote: "These books, pens, and materials aren't just supplies — they're the keys that unlock a child's future. Every delivery is a promise kept.",
+    image: '/images/real-school-deliveries.jpg',
   },
 ]
 

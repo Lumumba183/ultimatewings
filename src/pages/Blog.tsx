@@ -286,6 +286,23 @@ export default function Blog() {
           <p className="text-cream-white/75 mt-4 max-w-[480px] mx-auto">
             Your donation helps us continue writing these stories of transformation. Every contribution makes a difference.
           </p>
+
+          {/* Impact Tiers */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 max-w-[600px] mx-auto">
+            <div className="bg-cream-white/10 rounded-xl p-4 text-center border border-cream-white/10">
+              <span className="font-display font-bold text-xl text-golden-hour">$25</span>
+              <p className="text-cream-white/70 text-xs mt-1">Sponsor a child for a month</p>
+            </div>
+            <div className="bg-cream-white/10 rounded-xl p-4 text-center border border-cream-white/10">
+              <span className="font-display font-bold text-xl text-golden-hour">$50</span>
+              <p className="text-cream-white/70 text-xs mt-1">School supplies for 10 children</p>
+            </div>
+            <div className="bg-cream-white/10 rounded-xl p-4 text-center border border-cream-white/10">
+              <span className="font-display font-bold text-xl text-golden-hour">$100</span>
+              <p className="text-cream-white/70 text-xs mt-1">Support a widow's business</p>
+            </div>
+          </div>
+
           <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
             <Link to="/contact" className="btn-primary text-sm py-3 px-8">
               Donate Now
