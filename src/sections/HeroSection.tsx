@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import gsap from 'gsap'
@@ -109,7 +109,6 @@ function useParticles(canvasRef: React.RefObject<HTMLCanvasElement | null>) {
 export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const sectionRef = useRef<HTMLElement>(null)
-  const [videoLoaded, setVideoLoaded] = useState(false)
   useParticles(canvasRef)
 
   useEffect(() => {
@@ -132,28 +131,13 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-[100dvh] flex items-center overflow-hidden"
     >
-      {/* Video background */}
+      {/* Static image background */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          onLoadedData={() => setVideoLoaded(true)}
+        <img
+          src="/images/hero-image.png"
+          alt="Community members in Kenya"
           className="w-full h-full object-cover"
-          poster="/images/hero-image.png"
-        >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
-        </video>
-        {/* Fallback image */}
-        {!videoLoaded && (
-          <img
-            src="/images/hero-image.png"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        )}
+        />
         {/* Gradient overlay */}
         <div
           className="absolute inset-0"
