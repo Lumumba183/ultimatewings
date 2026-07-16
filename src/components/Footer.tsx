@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail } from 'lucide-react'
 
 const quickLinks = [
+  { label: 'Home', path: '/' },
   { label: 'About Us', path: '/#about' },
   { label: 'Our Programs', path: '/#programs' },
-  { label: 'Impact Stories', path: '/blog' },
+  { label: 'Our Impact', path: '/#impact' },
   { label: 'Blog', path: '/blog' },
   { label: 'Contact', path: '/contact' },
 ]
@@ -14,6 +15,12 @@ const getInvolved = [
   { label: 'Partner With Us', path: '/contact' },
   { label: 'Volunteer', path: '/contact' },
   { label: 'Fundraise', path: '/contact' },
+  { label: 'Become a Monthly Donor', path: '/contact' },
+]
+
+const legalLinks = [
+  { label: 'Terms of Service', path: '/terms' },
+  { label: 'Privacy Policy', path: '/privacy' },
 ]
 
 export default function Footer() {
@@ -28,7 +35,7 @@ export default function Footer() {
               <span className="text-label text-golden-hour mt-1">KENYA</span>
             </div>
             <p className="text-cream-white/60 text-sm leading-relaxed max-w-[280px]">
-              Restoring hope among vulnerable children and communities across Kenya.
+              Restoring hope among vulnerable children and communities across Kenya. Building education, empowerment, and healthcare for all.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-cream-white/60 hover:text-golden-hour transition-colors">
@@ -92,7 +99,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-teal-accent mt-0.5 flex-shrink-0" />
-                <span className="text-cream-white/60 text-sm">P.O. Box 28, 80202<br />Watamu, Kenya</span>
+                <span className="text-cream-white/60 text-sm">P.O. Box 28, 80202<br />Watamu, Kilifi County<br />Republic of Kenya</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-teal-accent flex-shrink-0" />
@@ -111,9 +118,20 @@ export default function Footer() {
           <p className="text-cream-white/40 text-xs">
             &copy; 2026 Ultimate Wings Kenya. All rights reserved.
           </p>
-          <p className="text-cream-white/40 text-xs">
-            Registered PBO in Kenya
-          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <p className="text-cream-white/40 text-xs">
+              Registered PBO in Kenya
+            </p>
+            {legalLinks.map((link) => (
+              <Link
+                key={link.label}
+                to={link.path}
+                className="text-cream-white/40 text-xs hover:text-golden-hour transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

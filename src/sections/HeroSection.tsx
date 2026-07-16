@@ -188,7 +188,7 @@ export default function HeroSection() {
       {/* Impact indicator */}
       <div className="absolute bottom-[5vh] right-[5vw] z-[3] hidden md:flex items-center gap-3 bg-cream-white/12 backdrop-blur-md rounded-full px-5 py-3">
         <span className="w-2 h-2 rounded-full bg-amber-light animate-pulse-dot" />
-        <span className="text-cream-white text-sm font-medium">45+ children in school</span>
+        <span className="text-cream-white text-sm font-medium">63+ children in school</span>
       </div>
 
       {/* Scroll indicator */}

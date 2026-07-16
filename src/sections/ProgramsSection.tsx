@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { BookOpen, Briefcase, Heart, ArrowRight } from 'lucide-react'
+import { BookOpen, Briefcase, Heart, Stethoscope, Sprout, Droplets, ArrowRight } from 'lucide-react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -9,17 +9,32 @@ const programs = [
   {
     icon: BookOpen,
     title: 'Education First',
-    description: 'Providing quality education, school supplies, and tutoring to ensure every child has access to learning opportunities that transform their future.',
+    description: 'Providing quality education, school supplies, and tutoring to ensure every child has access to learning opportunities that transform their future. Currently supporting 63+ children in school.',
   },
   {
     icon: Briefcase,
     title: 'Economic Empowerment',
-    description: 'Offering vocational training, micro-grants, and business support to help widows build sustainable livelihoods and achieve financial independence.',
+    description: 'Offering vocational training, table banking, micro-grants, and business support to help widows build sustainable livelihoods and achieve financial independence. 100+ widows empowered.',
   },
   {
     icon: Heart,
     title: 'Holistic Support',
-    description: 'Providing comprehensive care including nutrition, healthcare, emotional support, and safe housing to create a foundation for lasting change.',
+    description: 'Providing comprehensive care including nutrition, safe housing, emotional support, and spiritual guidance to create a foundation for lasting change.',
+  },
+  {
+    icon: Stethoscope,
+    title: 'Mobile Health Clinics',
+    description: 'Bringing essential healthcare directly to underserved communities in Malindi and Nairobi. When hospitals are too far and too expensive, we come to their doorstep.',
+  },
+  {
+    icon: Sprout,
+    title: 'Agriculture & Food Security',
+    description: 'Distributing chickens, goats, vegetable seeds, fruit trees (oranges, mangoes, cashew nuts, tomatoes), and supporting beekeeping for honey production. Turning hardship into harvest.',
+  },
+  {
+    icon: Droplets,
+    title: 'Menstrual Health & Dignity',
+    description: 'Partnering with KDEF to distribute sanitary towels and break the stigma around menstruation. Ensuring no girl misses school because of her period.',
   },
 ]
 
@@ -64,7 +79,7 @@ export default function ProgramsSection() {
           </h2>
         </div>
 
-        <div className="programs-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="programs-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program) => {
             const Icon = program.icon
             return (

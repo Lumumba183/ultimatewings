@@ -73,8 +73,8 @@ export default function AboutSection() {
             loading="lazy"
           />
           <div className="about-stat bg-golden-hour/10 rounded-2xl p-8">
-            <span className="font-display font-bold text-5xl text-golden-hour">45+</span>
-            <p className="text-off-black mt-2">families supported across Kenya</p>
+            <span className="font-display font-bold text-5xl text-golden-hour">63+</span>
+            <p className="text-off-black mt-2">children supported in schools across Kenya</p>
           </div>
         </div>
       </div>

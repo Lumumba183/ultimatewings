@@ -11,43 +11,111 @@ const categories = ['All', 'Education', 'Empowerment', 'Healthcare', 'Community'
 const articles = [
   {
     id: 1,
-    tag: 'Education',
-    title: 'The Power of Education: Breaking the Cycle of Poverty in Rural Kenya',
-    excerpt: 'Discover how access to quality education is transforming entire communities and creating pathways out of poverty for children in Kenya.',
-    meta: 'December 20, 2025 \u2022 6 min read',
-    image: '/images/blog-education.jpg',
+    tag: 'Healthcare',
+    title: 'Pads Are Not Charity – Menstrual Dignity Is a Right',
+    excerpt: 'Why girls in Kenya miss school — not because of menstruation itself, but because of failed systems. Discover how Ultimate Wings and KDEF are changing the narrative.',
+    meta: 'March 15, 2026 • 8 min read',
+    image: '/images/blog-menstrual.jpg',
+    slug: '/blog/pads-are-not-charity',
   },
   {
     id: 2,
-    tag: 'Empowerment',
-    title: 'From Vulnerability to Independence: Empowering Widows Through Micro-Enterprise',
-    excerpt: 'Meet the remarkable women who have built thriving businesses and reclaimed their dignity through our economic empowerment programs.',
-    meta: 'November 8, 2025 \u2022 7 min read',
-    image: '/images/blog-empowerment.jpg',
+    tag: 'Education',
+    title: '63 Children and Counting – How Ultimate Wings Keeps Dreams Alive',
+    excerpt: 'Meet the 63+ children in school through our sponsorship program. From special meals to university graduation — every dream matters.',
+    meta: 'February 28, 2026 • 7 min read',
+    image: '/images/blog-children.jpg',
+    slug: '/blog/63-children-and-counting',
   },
   {
     id: 3,
-    tag: 'Healthcare',
-    title: 'Holistic Healthcare: Healing Bodies and Minds in Underserved Communities',
-    excerpt: 'Learn about our comprehensive approach to healthcare that addresses not just physical needs, but emotional and spiritual well-being too.',
-    meta: 'October 15, 2025 \u2022 5 min read',
-    image: '/images/blog-healthcare.jpg',
+    tag: 'Empowerment',
+    title: 'From Hardship to Harvest – How Ultimate Wings Empowers Over 100 Widows',
+    excerpt: 'Through agriculture, table banking, and beekeeping — our widows are building sustainable livelihoods and reclaiming their dignity.',
+    meta: 'February 10, 2026 • 8 min read',
+    image: '/images/blog-widows.jpg',
+    slug: '/blog/from-hardship-to-harvest',
   },
   {
     id: 4,
-    tag: 'Community',
-    title: "A House Becomes a Home: The Story of Sainabu and Her Family",
-    excerpt: "When Sainabu's family received their new home, it wasn't just shelter \u2014 it was the foundation for a new beginning filled with hope and security.",
-    meta: 'September 22, 2025 \u2022 6 min read',
-    image: '/images/blog-community.jpg',
+    tag: 'Healthcare',
+    title: 'When the Hospital Is Too Far – Mobile Clinics Bringing Healthcare to Kenya\'s Doorstep',
+    excerpt: 'Hospitals are far and expensive. Ultimate Wings\' mobile clinics bridge the gap for communities in Malindi and Nairobi.',
+    meta: 'January 22, 2026 • 6 min read',
+    image: '/images/blog-healthcare.jpg',
+    slug: '/blog/mobile-clinics-healthcare',
   },
   {
     id: 5,
+    tag: 'Community',
+    title: 'Behind Every Student Who Stays in School, There\'s a Community',
+    excerpt: 'The role of local leaders, parents, elders, and advocates in keeping children educated — and why STEM skills are the future.',
+    meta: 'January 5, 2026 • 7 min read',
+    image: '/images/blog-community.jpg',
+    slug: '/blog/community-stem-education',
+  },
+  {
+    id: 6,
+    tag: 'Updates',
+    title: 'Education Doesn\'t Just Change a Girl\'s Life – It Changes Everything',
+    excerpt: 'Ultimate Wings Kenya Day 2026: Recommitting to a future where every girl can learn and choose what\'s next for her.',
+    meta: 'March 8, 2026 • 6 min read',
+    image: '/images/blog-girls-day.jpg',
+    slug: '/blog/girls-education-day-2026',
+  },
+  {
+    id: 7,
+    tag: 'Community',
+    title: 'Together We Rise – The Power of Community in Healing',
+    excerpt: 'A softer, emotional reflection on how friendship and community support strengthen our mission and our hearts.',
+    meta: 'December 25, 2025 • 5 min read',
+    image: '/images/blog-friendship.jpg',
+    slug: '/blog/together-we-rise',
+  },
+  {
+    id: 8,
+    tag: 'Education',
+    title: 'The Power of Education: Breaking the Cycle of Poverty in Rural Kenya',
+    excerpt: 'Discover how access to quality education is transforming entire communities and creating pathways out of poverty for children in Kenya.',
+    meta: 'December 20, 2025 • 6 min read',
+    image: '/images/blog-education.jpg',
+    slug: '/blog',
+  },
+  {
+    id: 9,
+    tag: 'Empowerment',
+    title: 'From Vulnerability to Independence: Empowering Widows Through Micro-Enterprise',
+    excerpt: 'Meet the remarkable women who have built thriving businesses and reclaimed their dignity through our economic empowerment programs.',
+    meta: 'November 8, 2025 • 7 min read',
+    image: '/images/blog-empowerment.jpg',
+    slug: '/blog',
+  },
+  {
+    id: 10,
+    tag: 'Healthcare',
+    title: 'Holistic Healthcare: Healing Bodies and Minds in Underserved Communities',
+    excerpt: 'Learn about our comprehensive approach to healthcare that addresses not just physical needs, but emotional and spiritual well-being too.',
+    meta: 'October 15, 2025 • 5 min read',
+    image: '/images/blog-healthcare.jpg',
+    slug: '/blog',
+  },
+  {
+    id: 11,
+    tag: 'Community',
+    title: "A House Becomes a Home: The Story of Sainabu and Her Family",
+    excerpt: "When Sainabu's family received their new home, it wasn't just shelter — it was the foundation for a new beginning filled with hope and security.",
+    meta: 'September 22, 2025 • 6 min read',
+    image: '/images/blog-community.jpg',
+    slug: '/blog',
+  },
+  {
+    id: 12,
     tag: 'Updates',
     title: '2025 Year in Review: 45 Children in School, 31 Graduates, Countless Lives Changed',
     excerpt: 'A look back at an incredible year of growth, impact, and transformation across the communities we serve in Kenya.',
-    meta: 'January 5, 2026 \u2022 10 min read',
+    meta: 'January 5, 2026 • 10 min read',
     image: '/images/blog-yearreview.jpg',
+    slug: '/blog',
   },
 ]
 
@@ -115,22 +183,22 @@ export default function Blog() {
           <div className="bg-white rounded-2xl overflow-hidden shadow-card flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
               <img
-                src="/images/blog-featured.jpg"
-                alt="Featured story"
+                src="/images/blog-menstrual.jpg"
+                alt="Pads Are Not Charity"
                 className="w-full h-full object-cover min-h-[300px] lg:min-h-[400px]"
               />
             </div>
             <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
               <span className="text-label text-golden-hour tracking-[0.15em]">FEATURED STORY</span>
               <h2 className="font-display font-bold text-deep-forest mt-4 leading-tight" style={{ fontSize: 'clamp(28px, 3vw, 40px)' }}>
-                How Education Changed Oscar's Life Forever
+                Pads Are Not Charity – Menstrual Dignity Is a Right
               </h2>
               <p className="text-off-black/70 mt-4 leading-relaxed">
-                From a life-threatening accident to a smiling student, Oscar's journey exemplifies the transformative power of compassionate support and dedicated care.
+                Why girls in Kenya miss school — not because of menstruation itself, but because of failed systems. Discover how Ultimate Wings and KDEF are changing the narrative through sanitary towel distribution and stigma-breaking education.
               </p>
-              <span className="text-muted-sage text-sm mt-4">January 15, 2026 &bull; 8 min read</span>
+              <span className="text-muted-sage text-sm mt-4">March 15, 2026 &bull; 8 min read</span>
               <Link
-                to="/blog"
+                to="/blog/pads-are-not-charity"
                 className="link-arrow text-deep-forest hover:text-golden-hour font-bold underline underline-offset-4 mt-6 inline-flex"
               >
                 Read Full Story <ArrowRight size={16} />
@@ -186,12 +254,18 @@ export default function Blog() {
                     {article.excerpt}
                   </p>
                   <span className="text-muted-sage text-xs mt-4 block">{article.meta}</span>
-                  <Link
-                    to="/blog"
-                    className="link-arrow text-deep-forest hover:text-golden-hour text-sm mt-3 inline-flex font-medium"
-                  >
-                    Read More <ArrowRight size={14} />
-                  </Link>
+                  {article.slug !== '/blog' ? (
+                    <Link
+                      to={article.slug}
+                      className="link-arrow text-deep-forest hover:text-golden-hour text-sm mt-3 inline-flex font-medium"
+                    >
+                      Read More <ArrowRight size={14} />
+                    </Link>
+                  ) : (
+                    <span className="text-muted-sage text-sm mt-3 inline-flex font-medium">
+                      Coming Soon <ArrowRight size={14} />
+                    </span>
+                  )}
                 </div>
               </article>
             ))}

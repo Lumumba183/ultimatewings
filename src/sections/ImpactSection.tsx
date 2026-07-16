@@ -6,9 +6,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 const stats = [
   {
-    number: '45+',
+    number: '63+',
     label: 'Children in School',
-    description: 'Every child deserves an education. We\'re making that a reality across Kenya.',
+    description: 'Every child deserves an education. We\'re making that a reality across Kenya, from primary to university.',
   },
   {
     number: '31',
@@ -16,9 +16,9 @@ const stats = [
     description: 'From primary school to university — we walk the full journey with our students.',
   },
   {
-    number: '30+',
+    number: '100+',
     label: 'Widows Empowered',
-    description: 'Economic independence changes everything. Our widows build thriving businesses.',
+    description: 'Through agriculture, table banking, and beekeeping — our widows build thriving, independent lives.',
   },
   {
     number: '95%',
